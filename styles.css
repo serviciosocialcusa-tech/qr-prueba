@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 40px;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tarjeta de cada PC */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Animación al pasar el mouse */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Títulos */
+.card h1 {
+    font-size: 1.4rem;
+    color: #1e3a8a; /* Azul profundo */
+    margin-bottom: 15px;
+}
+
+/* Texto */
+.card p {
+    font-size: 1rem;
+    margin: 6px 0;
+}
+
+/* Estado con colores */
+.estado-operativa {
+    color: #2563eb; /* Azul brillante */
+    font-weight: bold;
+}
+
+.estado-mantenimiento {
+    color: #dc2626; /* Rojo elegante */
+    font-weight: bold;
+}
